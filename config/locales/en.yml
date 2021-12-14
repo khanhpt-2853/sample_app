@@ -31,3 +31,17 @@
 
 en:
   hello: "Hello world"
+  logo: "Simple App"
+  english: "English"
+  vietnamese: "Tieng Viet"
+  app_name: "Sample app"
+  title: "Ruby on Rails Tutorial Sample App"
+  home: "Home"
+  help: "Help"
+  contact: "Contact"
+  welcome: "Welcome to the Sample App"
+  intro_home: "This is the home page for the"
+  intro_help: "More help about Rails can find at "
+  intro_help2: "Learning Rails can find at "
+  rails_tutorial: "Ruby on Rails Tutorial"
+  sign_up: "Sign up now!"
