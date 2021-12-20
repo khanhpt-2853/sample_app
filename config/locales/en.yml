@@ -5,6 +5,12 @@ en:
       help: "Help"
       contact: "Contact"
       app_name: "Sample app"
+      log_in: "Log in"
+      user: "User"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
   static_pages:
     title: "Ruby on Rails Tutorial Sample App"
     home:
@@ -23,8 +29,9 @@ en:
     english: "English"
     vietnamese: "Vietnamese"
   errors:
-      error_message: "Please fix the following errors: %{count}"
-      error_singular: "error"
+    error_message: "Please fix the following errors: %{count}"
+    error_singular: "error"
+    invalid_email_password_combination: "Invalid email / password combination"
   users:
     new:
       sign_up: "Sign up"
@@ -34,6 +41,13 @@ en:
     create:
       success: "User created successfully"
       failure: "User creation failed"
+  sessions:
+    new:
+      sign_up: "Sign up"
+      log_in: "Log in"
+      new_user: "New user?"
+      email: "Email: "
+      password: "Password: "
   activerecord:
     models:
       user: User

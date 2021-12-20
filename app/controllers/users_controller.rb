@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     return if @user
 
     flash[:danger] = t ".not_found"
-    redirect_to new_user_path
+    redirect_to signup_path
   end
 
   def new
@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t ".success"
       redirect_to @user
     else
