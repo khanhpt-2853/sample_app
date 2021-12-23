@@ -1,5 +1,5 @@
 length:
-  max_255: 255
-  min_10: 10
+  digit_255: 255
+  digit_10: 10
 regex:
   email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
