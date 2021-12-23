@@ -5,6 +5,12 @@ vi:
       help: "Trợ giúp"
       contact: "Liên hệ"
       app_name: "App đơn giản"
+      log_in: "Đăng nhập"
+      user: "Người dùng"
+      account: "Tài khoản"
+      profile: "Thông tin cá nhân"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
   static_pages:
     title: "Hướng dẫn Ruby on Rails App đơn giản"
     home:
@@ -23,8 +29,9 @@ vi:
     english: "Tiếng Anh"
     vietnamese: "Tiếng Việt"
   errors:
-      error_message: "Vui lòng sửa các lỗi sau: %{count} "
-      error_singular: "lỗi"
+    error_message: "Vui lòng sửa các lỗi sau: %{count} "
+    error_singular: "lỗi"
+    invalid_email_password_combination: "Email / Mật khẩu không hợp lệ"
   users:
     new:
       sign_up: "Đăng ký"
@@ -34,6 +41,13 @@ vi:
     create:
       success: "Tạo người dùng thành công"
       failure: "Tạo người dùng thất bại"
+  sessions:
+    new:
+      sign_up: "Đăng ký"
+      log_in: "Đăng nhập"
+      new_user: "Chưa có tài khoản?"
+      email: "Email: "
+      password: "Mật khẩu: "
   activerecord:
     models:
       user: User

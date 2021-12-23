@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   around_action :switch_locale
 
+  include SessionsHelper
+
   private
 
   def switch_locale &action
