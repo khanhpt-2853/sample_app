@@ -48,6 +48,7 @@ en:
       new_user: "New user?"
       email: "Email: "
       password: "Password: "
+      remember_me: "Remember me"
   activerecord:
     models:
       user: User
