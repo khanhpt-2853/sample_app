@@ -32,6 +32,7 @@ vi:
     error_message: "Vui lòng sửa các lỗi sau: %{count} "
     error_singular: "lỗi"
     invalid_email_password_combination: "Email / Mật khẩu không hợp lệ"
+    not_activated: "Tài khoản của bạn chưa được kích hoạt. Vui lòng kiểm tra email của bạn để biết thêm chi tiết."
   users:
     index:
       list_users: "Danh sách người dùng"
@@ -43,6 +44,7 @@ vi:
     create:
       success: "Tạo người dùng thành công"
       failure: "Tạo người dùng thất bại"
+      please_check_mail: "Vui lòng kiểm tra email để kích hoạt tài khoản"
     update:
       success: "Cập nhật người dùng thành công"
       failure: "Cập nhật người dùng thất bại"
@@ -50,6 +52,7 @@ vi:
       edit_user: "Chỉnh sửa người dùng"
       delete_user: "Xóa người dùng"
       save_change: "Lưu thay đổi"
+      please_login: "Vui lòng đăng nhập"
     destroy:
       success: "Xóa người dùng thành công"
       failure: "Xóa người dùng thất bại"
@@ -64,17 +67,26 @@ vi:
       email: "Email: "
       password: "Mật khẩu: "
       remember_me: "Ghi nhớ đăng nhập"
+  account_activations:
+    edit:
+      activated: "Tài khoản đã được kích hoạt"
   pagy:
     nav:
       prev: "Trước"
       next: "Tiếp theo"
       gap: "..."
+  user_mailer:
+    account_activation:
+      subject: "App đơn giản - Kích hoạt tài khoản"
+      hello: "Xin chào"
+      click_to_active: "Nhấn vào đây để kích hoạt tài khoản"
+      active_link: "Kích hoạt"
   activerecord:
     models:
       user: User
     attributes:
       user:
         name: "Tên: "
-        email: "Email: "
+        email: "Email: " 
         password: "Mật khẩu: "
         password_confirmation: "Mật khẩu xác nhận: "

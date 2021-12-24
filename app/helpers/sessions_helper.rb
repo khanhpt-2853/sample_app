@@ -9,7 +9,7 @@ module SessionsHelper
       @current_user ||= User.find_by id: user_id
     elsif (user_id = cookies.signed[:user_id])
       user = User.find_by id: user_id
-      if user&.authenticated?(cookies[:remember_token])
+      if user&.authenticated?(:remember, cookies[:remember_token])
         log_in user
         @current_user = user
       end
@@ -64,5 +64,11 @@ module SessionsHelper
 
   def is_admin? user
     current_user.admin? && !current_user?(user)
+  end
+
+  def login user
+    log_in user
+    check_remember user
+    redirect_back_or user
   end
 end
