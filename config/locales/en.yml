@@ -33,6 +33,8 @@ en:
     error_singular: "error"
     invalid_email_password_combination: "Invalid email / password combination"
   users:
+    index:
+      list_users: "List users"
     new:
       sign_up: "Sign up"
       create_my_account: "Create my acount"
@@ -41,6 +43,19 @@ en:
     create:
       success: "User created successfully"
       failure: "User creation failed"
+    update:
+      success: "User updated successfully"
+      failure: "User update failed"
+    edit:
+      edit_user: "Edit user"
+      delete_user: "Delete user"
+      save_change: "Save changes"
+    destroy:
+      success: "User deleted successfully"
+      failure: "User delete failed"
+    user:
+      delete: "Delete"
+      delete_confirm: "Are you sure you want to delete this user?"
   sessions:
     new:
       sign_up: "Sign up"
@@ -49,11 +64,17 @@ en:
       email: "Email: "
       password: "Password: "
       remember_me: "Remember me"
+  pagy:
+    nav:
+      prev: "Prev"
+      next: "Next"
+      gap: "..."
   activerecord:
     models:
       user: User
     attributes:
       user:
         name: "Name: "
+        email: "Email: "
         password: "Password: "
         password_confirmation: "Password Confirmation: "

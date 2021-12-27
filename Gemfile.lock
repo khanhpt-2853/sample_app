@@ -124,6 +124,8 @@ GEM
       dry-schema (~> 1.8, >= 1.8.0)
     erubi (1.10.0)
     execjs (2.8.1)
+    faker (2.1.2)
+      i18n (>= 0.8)
     ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -151,6 +153,7 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
+    pagy (5.6.6)
     parallel (1.21.0)
     parser (3.0.3.2)
       ast (~> 2.4.1)
@@ -278,8 +281,10 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   config
+  faker (= 2.1.2)
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  pagy
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
