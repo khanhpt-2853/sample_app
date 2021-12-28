@@ -32,6 +32,7 @@ en:
     error_message: "Please fix the following errors: %{count}"
     error_singular: "error"
     invalid_email_password_combination: "Invalid email / password combination"
+    not_activated: "Your account is not activated yet. Please check your email for activation instructions."
   users:
     index:
       list_users: "List users"
@@ -43,6 +44,7 @@ en:
     create:
       success: "User created successfully"
       failure: "User creation failed"
+      please_check_mail: "Please check your email to activate your account"
     update:
       success: "User updated successfully"
       failure: "User update failed"
@@ -50,6 +52,7 @@ en:
       edit_user: "Edit user"
       delete_user: "Delete user"
       save_change: "Save changes"
+      please_login: "Please log in"
     destroy:
       success: "User deleted successfully"
       failure: "User delete failed"
@@ -64,11 +67,20 @@ en:
       email: "Email: "
       password: "Password: "
       remember_me: "Remember me"
+  account_activations:
+    edit:
+      activated: "Your account has been activated!"
   pagy:
     nav:
       prev: "Prev"
       next: "Next"
       gap: "..."
+  user_mailer:
+    account_activation:
+      subject: "Sample app - account activation"
+      hello: "Hello"
+      click_to_active: "Click to active your account"
+      active_link: "Active link"
   activerecord:
     models:
       user: User

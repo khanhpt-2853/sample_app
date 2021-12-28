@@ -4,9 +4,12 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
-      log_in user
-      check_remember user
-      redirect_back_or user
+      if user.activated
+        login user
+      else
+        flash[:warning] = t "errors.not_activated"
+        redirect_to root_url
+      end
     else
       flash.now[:danger] = t "errors.invalid_email_password_combination"
       render :new
