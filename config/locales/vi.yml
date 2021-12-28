@@ -33,9 +33,15 @@ vi:
     error_singular: "lỗi"
     invalid_email_password_combination: "Email / Mật khẩu không hợp lệ"
     not_activated: "Tài khoản của bạn chưa được kích hoạt. Vui lòng kiểm tra email của bạn để biết thêm chi tiết."
+    email_not_found: "Email không tìm thấy"
+    not_found_user: "Người dùng không tìm thấy"
+    password_reset_expired: "Link đặt lại mật khẩu đã hết hạn. Vui lòng yêu cầu một link mới."
+    password_reset_empty: "Mật khẩu không thể để trống"
+    password_reset_fail: "Đặt lại mật khẩu thất bại"
   users:
     index:
       list_users: "Danh sách người dùng"
+      please_login: "Please log in"
     new:
       sign_up: "Đăng ký"
       create_my_account: "Đăng ký"
@@ -70,6 +76,17 @@ vi:
   account_activations:
     edit:
       activated: "Tài khoản đã được kích hoạt"
+  password_resets:
+    new:
+      forgot_password: "Quên mật khẩu?"
+      submit: "Gửi"
+    create:
+      email_sent: "Email đặt lại mật khẩu đã được gửi"
+    edit:
+      reset_password: "Đặt lại mật khẩu"
+      update_password: "Cập nhật"
+    update:
+      password_reset_success: "Đặt lại mật khẩu thành công"
   pagy:
     nav:
       prev: "Trước"
@@ -81,6 +98,13 @@ vi:
       hello: "Xin chào"
       click_to_active: "Nhấn vào đây để kích hoạt tài khoản"
       active_link: "Kích hoạt"
+    password_reset:
+      subject: "App đơn giản - Đặt lại mật khẩu"
+      hello: "Xin chào"
+      click_to_reset: "Nhấn vào đây để đặt lại mật khẩu"
+      reset_link: "Đặt lại mật khẩu"
+      expire_warning: "Đường dẫn đặt lại mật khẩu sẽ hết hạn sau %{count} phút"
+      ignore_this_email: "Nếu bạn không muốn đặt lại mật khẩu, vui lòng bỏ qua email này"
   activerecord:
     models:
       user: User
