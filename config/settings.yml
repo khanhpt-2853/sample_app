@@ -7,5 +7,7 @@ size:
   size_50: 50
   size_80: 80
 per_page_10: 10
+time:
+  hour_2: 2
 regex:
   email: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
